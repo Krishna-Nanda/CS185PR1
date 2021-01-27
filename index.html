@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href = "/css/styles.css" rel ="stylesheet">
+    <link href = "./css/styles.css" rel ="stylesheet">
+    <link href = "./css/index.css" rel ="stylesheet">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Krishna's Website</title>
   </head>
   <body>
+        <nav>
     <ul>
-      <li><a href="html/text.html">Text</a></li>
-      <li><a href="html/images.html">Image</a></li>
-      <li><a href="html/video.html">Video</a></li>
-      <li><a href="html/table.html">Table</a></li>
+      <li><a class="navlink"  id="activePage" href="./index.html">Text</a></li>
+      <li><a class="navlink"  href="./images.html">Image</a></li>
+      <li><a class="navlink" href="./video.html">Video</a></li>
+      <li><a class="navlink"  href="./table.html">Table</a></li>
     </ul>
+        </nav>
+    <div class="container">
+    <form class="form">
+        <br><br><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <label>Favorite Movie</label>
+        <div class="radioContainer">
+        <label class="radio-label" for="Inception">Inception</label>
+        <input class="radio-input" type="radio" id="Inception" name="movie" value="Inception">
+        <label class="radio-label" for="Interstellar">Interstellar</label>
+        <input class="radio-input" type="radio" id="Interstellar" name="movie" value="Interstellar">
+        <label class="radio-label" for="Tenet">Tenet</label>
+        <input class="radio-input" type="radio" id="Tenet" name="movie" value="Tenet">
+      </div>
+        <input type="submit" value="Done">
+    </form>
+    </div>
+    <script src="./js/main.js"></script>
    </body>
-
+   
 </html>

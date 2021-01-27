@@ -1,0 +1,28 @@
+.gallery-image{
+    margin-bottom: 16px;
+    height: 300px;
+    object-fit: cover;
+}
+@media only screen and (min-width:1200px){
+    .gallery-image{
+        width: 25%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1199px){
+    .gallery-image{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width:325px) and (max-width:767px){
+    .gallery-image{
+        width: 90%;
+    }
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
