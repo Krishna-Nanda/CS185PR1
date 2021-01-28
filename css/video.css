@@ -1,0 +1,59 @@
+.video{
+    margin-bottom: 16px;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+.videos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.video-container{
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+.video-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: 2;
+    /* width:; */
+}
+
+#overlay-video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75% !important;
+    height: auto !important;
+    border: 2px solid black;
+    z-index: 5;
+    display: none;
+}
+
+/* Select iframe elements who are children of video-overlay-container */
+#overlay-video-container > iframe {
+    width: 100%;
+}
+@media only screen and (min-width:1200px){
+    .video-container{
+        width: 20%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1199px){
+    .video-container{
+        width: 30%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:767px){
+    .video-container{
+        width: 40%;
+    }
+}

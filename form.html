@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href = "./css/styles.css" rel ="stylesheet">
+    <link href = "./css/index.css" rel ="stylesheet">
+    <link href = "./css/form.css" rel ="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Krishna's Website</title>
+  </head>
+  <body>
+        <nav>
+    <ul>
+      <li><a class="navlink"   href="./index.html">Text</a></li>
+      <li><a class="navlink"  href="./images.html">Image</a></li>
+      <li><a class="navlink" href="./video.html">Video</a></li>
+      <li><a class="navlink"  href="./table.html">Table</a></li>
+      <li><a class="navlink" id="activePage" href="./form.html">Form</a></li>
+    </ul>
+        </nav>
+    <div class="container">
+        <h2 class="message"> </h2>
+    <form class="form" onsubmit="event.preventDefault()">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email">
+      </div>
+        <input class="submit" type="submit" value="Submit">
+    </form>
+    </div>
+    <script src="./js/form.js"></script>
+   </body>
+   
+</html>
